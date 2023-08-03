@@ -101,7 +101,7 @@ export default function App() {
   );
 
   useEffect(function () {
-    fetch("https://mocki.io/v1/a5fb76b5-6f89-4664-8854-8cae4eeda08d")
+    fetch("https://quiz-backend-urus.onrender.com/api")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
