@@ -101,10 +101,11 @@ export default function App() {
   );
 
   useEffect(function () {
-    fetch("https://quiz-backend-urus.onrender.com/api")
+    fetch("http://localhost:3001/api")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+
         dispatch({ type: "dataReceived", payload: data });
       })
       .catch((err) => dispatch({ type: "dataFailed" }));
